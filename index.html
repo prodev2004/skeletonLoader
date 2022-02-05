@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Skeleton Loader</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="top">
+                <img src="https://unsplash.it/400/200">
+            </div>
+            <div class="bottom">
+                <h2>Some Title</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, nulla.</p>
+            </div>
+
+            <div class="card loading">
+                <div class="top">
+                    
+                </div>
+                <div class="bottom">
+                    <h2></h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const loadingCard = document.querySelector('.loading');
+
+        window.addEventListener('load', () => {
+            loadingCard.style.display = 'none';
+        })
+    </script>
+</body>
+</html>
